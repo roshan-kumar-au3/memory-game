@@ -18,7 +18,7 @@ var minutesContainer = document.querySelector("#minutes");
 var hoursContainer = document.querySelector("#hours");
 
 
-(function init() {
+function init() {
     var iconsList = shuffle(icons);
     for(var i = 0; i < iconsList.length; i++) {
       var card = document.createElement("li");
@@ -27,7 +27,9 @@ var hoursContainer = document.querySelector("#hours");
       cardContainer.appendChild(card);
        clickCard(card);
     }
-})(); //start the game for first time
+}
+ //start the game for first time
+ init();
 
 // Adding click eventListener to card
 function clickCard(card) {
