@@ -68,10 +68,10 @@ function compare(currentCard,previousCard) {
        gameOver();
    } else {
        setTimeout(function() {
-        console.log("Doesn't match");
+        //console.log("Doesn't match");
         currentCard.classList.remove("open", "show", "disable");
         previousCard.classList.remove("open","show", "disable");
-       },500);
+       },1200);
 
        openedCards = [];
    }
