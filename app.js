@@ -170,6 +170,9 @@ restart.addEventListener('click', function() {
     openedCards = [];
     //reset moves
     moves = 0;
+    minutesContainer.textContent = "";
+    hoursContainer.textContent = "";
+    secondsContainer.textContent = "";
     movesContainer.innerHTML = moves;
     starContainer.innerHTML = `<li><i class="fa fa-star"></i></li>
     <li><i class="fa fa-star"></i></li>
