@@ -109,3 +109,14 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+ @media only screen and (max-width: 600px) {
+    .deck {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .deck .card {
+        height: 80px;
+        width: 80px;
+    }
+}
